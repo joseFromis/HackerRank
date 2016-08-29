@@ -8,8 +8,7 @@ public class SelectionSort extends AbstractClassicSort {
 		setArray(array);
 	}
 
-	@Override
-	public void sort() {
+	public void sort1() {
 		
 		for (int i = 0; i < array.length -1; i++) {
 			
@@ -24,6 +23,26 @@ public class SelectionSort extends AbstractClassicSort {
 			}
 			
 			swap(i, min);
+			
+		}
+	}
+	
+	@Override
+	public void sort() {
+		
+		for (int i = 0; i < array.length -1; i++) {
+			
+			int max = 0;
+			
+			for (int j = 1; j < array.length - i; j++) {
+				
+				if (array[j] > array[max]) {
+					max = j;
+				}
+				
+			}
+			
+			swap(max, array.length - i - 1);
 			
 		}
 	}

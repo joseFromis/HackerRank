@@ -41,6 +41,6 @@ public class InsertionSortPart1 {
 			System.out.print(n+" ");
 		}
 	        System.out.println("");
-	   	}
+	}
 	
 }

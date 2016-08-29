@@ -12,7 +12,7 @@ import sorting.classic.impl.SelectionSort;
 
 public class TestClassicSort {
 	
-	int[] unsortedArray = {2, -1, 4, 5, 10, 0, -5, 8};
+	int[] unsortedArray = {-1, -5, 4, 5, 10, 8, 2, 0};
 	int[] sortedArrray = {-5, -1, 0, 2, 4, 5, 8, 10};
 	
 	@Test
