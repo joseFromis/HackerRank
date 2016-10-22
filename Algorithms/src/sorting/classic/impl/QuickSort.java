@@ -34,15 +34,16 @@ public class QuickSort extends AbstractClassicSort {
 				i++;
 				j--;
 			}
-			
-			if (low < j) {
-				merge(low, j);
-			}
-			
-			if (high > i) {
-				merge(i, high);
-			}
 		}
+			
+		if (low < j) {
+			merge(low, j);
+		}
+	
+		if (high > i) {
+			merge(i, high);
+		}
+		
 	}
 
 }
